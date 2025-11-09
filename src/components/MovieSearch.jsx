@@ -10,9 +10,11 @@ export default function MovieSearch({ movieName, setMovie, searchApi }) {
         type="text"
         placeholder="Enter movie name..."
       />
+{/*  */}
       <button className="search-btn" onClick={searchApi}>
         Search
       </button>
+    
     </div>
   );
 }

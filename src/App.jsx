@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import MovieSearch from "./Components/MovieSearch";
+import MovieSearch from "./components/MovieSearch";
 
 const API_KEY = `dc516557`;
 

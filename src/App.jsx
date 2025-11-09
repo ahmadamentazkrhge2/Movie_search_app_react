@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="title">🎬 Movie Finder</h1>
+      <h1 className="title">Movie Search App🎬</h1>
 
       <MovieSearch
         movieName={movieName}

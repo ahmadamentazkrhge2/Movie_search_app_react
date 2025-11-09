@@ -1,0 +1,133 @@
+body {
+  background-color: #0f172a; /* dark navy */
+  color: #f8fafc;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+/* --- Search Box --- */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 12px 16px;
+  border: 2px solid #38bdf8;
+  border-radius: 8px;
+  width: 70%;
+  font-size: 16px;
+  background-color: #1e293b;
+  color: white;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  background-color: #0f172a;
+}
+
+.search-btn {
+  padding: 12px 20px;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* --- Movie Card --- */
+.movie-card {
+  background-color: #1e293b;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Poster --- */
+.poster {
+  width: 180px;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.poster:hover {
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* --- Details --- */
+.details {
+  text-align: left;
+}
+
+.details h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* --- Not Found Message --- */
+.not-found {
+  color: #f87171;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .movie-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+.details{
+  text-align: center;
+}
+  .poster {
+    width: 70%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

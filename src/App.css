@@ -17,6 +17,20 @@
   --dark-border: #334155;
   --dark-hover: #334155;
 }
+button {
+  outline: none !important;
+  border: none !important;
+}
+
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button, * {
+  -webkit-tap-highlight-color: transparent;
+}
 
 /* Base Styles */
 * {
